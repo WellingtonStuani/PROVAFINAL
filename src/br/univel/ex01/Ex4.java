@@ -22,5 +22,8 @@ public class Ex4 {
 			 }
 			 System.out.println("");
 	}
+	public static void main(String[] args) {
+		execute(160833);
+	}
 
 }

@@ -1,7 +1,7 @@
 package br.univel.ex08;
 
 public class Ex08 {
-		static Integer ii = 160833;
+		
 	 public static void execute(Integer ii){
 		 char[] c= String.valueOf(ii).toCharArray();
 		 int j =0;
@@ -14,4 +14,8 @@ public class Ex08 {
 		 }
 		 System.out.println(j);
 	 }
+	 
+	 public static void main(String[] args) {
+		execute(160833);
+	}
 }

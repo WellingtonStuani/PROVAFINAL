@@ -1,6 +1,6 @@
 package br.univel.ex01;
 
-public class Exemplo {
+public class Ex01 {
 	
 	 static int num = 160833;
 	

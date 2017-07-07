@@ -1,8 +1,8 @@
 package br.univel.ex01;
 
 public class ex03 {
-		static  int num = 160833;
-	 public static  void execute (Integer ii){
+	
+	 public static  void  execute (Integer ii){
 		 String str = String.valueOf(ii);
 		 int parc = Integer.parseInt(str.substring(5,6));
 		 Plunct a = new Plact(parc);
@@ -10,7 +10,11 @@ public class ex03 {
 		 System.out.println(a.getType()+ b.getType());
 		 
 	 }
+	 public static void main(String[] args) {
+		execute(160833);
+	}
 }
+
 
   class Plunct{
 	private int num; 
@@ -40,7 +44,8 @@ public class ex03 {
 	int getType(){
 		return super.getType() + 10;
 	}
-	
+	 
+
 
   }
   

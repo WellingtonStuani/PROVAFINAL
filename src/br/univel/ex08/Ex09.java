@@ -27,4 +27,8 @@ public class Ex09 {
 	 
 	 abstract void calcular(int i);
   }
+  
+  public static void main(String[] args) {
+	execute(ii);
+}
 }

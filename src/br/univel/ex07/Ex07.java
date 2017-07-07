@@ -1,6 +1,8 @@
 package br.univel.ex07;
 
-public class Ex07 {
+import java.util.Iterator;
+
+public class Ex07<T> {
 	private CompartimentoLista<T>raiz;
 	private CompartimentoLista<T>prox;
 	
@@ -10,12 +12,12 @@ public class Ex07 {
 			prox = raiz;
 		} else {
 			CompartimentoLista<T> novo = new CompartimentoLista<T>(t);
-			pros.setProximo(novo);
+			prox.setProximo(novo);
 			prox = novo;
 			 
 		}
 	}
-	public iterator<T> iterator(){
+	public Iterator<T> iterator(){
 		return new Iterator<T>(){
 			private CompartimentoLista<T> step = raiz;
 			public boolean hasNext(){
@@ -58,7 +60,7 @@ public class Ex07 {
 		for(int j = 0 ; j< ar.length; j++){
 			lista.add(Integer.parseInt(ar[j] + ""));
 		}
-		Iterator<Integer> ir = lista.iterator();
+		Iterator<Integer> it = lista.iterator();
 		
 		int soma= 0;
 		while(it.hasNext()){
@@ -70,6 +72,11 @@ public class Ex07 {
 			}
 		}
 		System.out.println(soma);
+	}
+	
+	
+	public static void main(String[] args) {
+		execute(160833);
 	}
 
 }
